@@ -1,30 +1,26 @@
 #include "main.h"
 
 /**
- * cap_string - capitalize first letter of each word
+ * leet - encode string into 1337 leet
  * @s: string to manipulate
  * Return: string
  */
 
-char *cap_string(char *s)
+char *leet(char *s)
 {
-	int i = 0;
 
-	if (s[i] >= 'a' && s[i] <= 'z')
-		s[i] = s[i] - 'a' + 'A';
-	i++;
+	int a[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int b[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
-	while (s[i] != '\0')
+	int i, j;
+
+	for (j = 0; s[j] != '\0'; j++)
 	{
-
-		if ((s[i] >= 'a' && s[i] <= 'z')
-		   && (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
-		       s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
-		       s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
-		       s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
-		       || s[i - 1] == '\n'))
-		       s[i] = s[i] - 'a' + 'A';
-		i++;
+		for (i = 0; a[i] != '\0'; i++)
+		{
+			if (s[j] == a[i])
+				s[j] = b[i];
+		}
 	}
 
 	return (s);
