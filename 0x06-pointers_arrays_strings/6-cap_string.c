@@ -1,31 +1,26 @@
 #include "main.h"
 
 /**
- * cap_string - capitalize first letter of each word
- * @s: string to manipulate
- * Return: string
+ * cap_string -> capitalization function
+ * @x: string param
+ * Return: capitalised version of the string
  */
-
-char *cap_string(char *s)
+char *cap_string(char *x);
 {
-	int i = 0;
+	char spc[] = {32, 9,'\n',',' , ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13;
+	int a = 0, i;
 
-	/* check first index for capital */
-	if (s[i] >= 'a' && s[i] <= 'z')
-		s[i] = s[i] - 'a' + 'A';
-	i++;
-
-	while (s[i] != '\0')
+	while (x[a])
 	{
-
-		/* if lowercase and prior char is separator, capitalize*/
-		if ((s[i] >= 'a' && s[i] <= 'z')
-		    && (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
-			s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
-			s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
-			s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
-			|| s[i - 1] == '\n'))
-			s[i] = s[i] - 'a' + 'A';
-		i++;
+		i = 0;
+		while (i < len)
+		{
+			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
+				x[a] = x[a] - 32;
+			i++;
+		}
+		a++;
 	}
+	return (x);
 }
