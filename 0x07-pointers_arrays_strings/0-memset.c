@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * _memset - fill n bytes of memory with a constant value
  * @s: pointer to memory area
