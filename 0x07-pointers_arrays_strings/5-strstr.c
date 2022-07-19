@@ -4,7 +4,7 @@
 /**
  * _strstr - locate and return pointer to first occurence of substring
  * @haystack: string to search
- * @needle: target substring to search for
+ * @needle: target substring to be searched for
  * Return: pointer to index of sring at first occurence of the whole substring
  */
 char *_strstr(char *haystack, char *needle)
