@@ -1,6 +1,6 @@
 #include "main.h"
-#define NULL 0
 #include <string.h>
+#define NULL 0
 
 /**
  * _strstr - locate and return pointer to first occurence of substring
@@ -8,7 +8,6 @@
  * @needle: target substring to search for
  * Return: pointer to index of sring at first occurence of the whole substring
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	int i = 0; j, x;
