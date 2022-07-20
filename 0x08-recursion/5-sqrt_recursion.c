@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - find square root of n, starting from the smallest possible, 0
+ * int_sqrt_recursion - find square root of n, starting from the smallest possible, 0
  * @n: n
  * @root: test this root
  * Return: natural square root, or -1 if not natural root
