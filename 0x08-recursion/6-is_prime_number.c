@@ -2,9 +2,9 @@
 
 int check_prime(int, int);
 /**
- * is_prime_number - check if prime
- * @n: number to check if prime
- * Return: 1 if prime, 0 if not
+ * is_prime_number -> prime identifier
+ * @n: is number
+ * Return: integer
  */
 
 int is_prime_number(int n)
