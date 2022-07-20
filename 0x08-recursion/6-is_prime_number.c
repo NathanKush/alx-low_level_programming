@@ -8,13 +8,5 @@
 
 int is_prime_number(int n)
 {
-	int divisor = 3;
-
-	if (n % 2 == 0 || n < 2)
-		return (0);
-	if (n == 2)
-		return (1);
-
-	return (is_prime(n, divisor));
-
+	return (check_prime(n, 1));
 }
