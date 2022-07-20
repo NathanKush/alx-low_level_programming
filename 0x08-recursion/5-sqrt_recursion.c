@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * int_sqrt_recursion - find square root of n, starting from the smallest possible, 0
+ * find_root - find square root of n, starting from the smallest possible, 0
  * @n: n
  * @root: test this root
  * Return: natural square root, or -1 if not natural root
  */
 
-int _sqrt_recursion(int n)
+int find_root(int n, int root)
 {
 	if (root * root > n)
 		return (-1);
