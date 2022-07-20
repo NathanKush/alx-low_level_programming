@@ -18,6 +18,12 @@ int _sqrt_recursion(int n)
 	return (find_root(n, root + 1));
 }
 
+/**
+ * _sqrt_recursion - find natural square root of n
+ * @n: n
+ * Return: natura; square root, or -1 if not natural root
+ */
+
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
